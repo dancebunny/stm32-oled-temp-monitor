@@ -1,0 +1,20 @@
+# Build files
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+
+# STM32CubeIDE
+.settings/
+.project
+.cproject
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

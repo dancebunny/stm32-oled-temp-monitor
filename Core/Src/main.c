@@ -141,7 +141,7 @@ void OLED_DrawString(uint8_t x, uint8_t y, const char* str) {
 float Calculate_Temperature(uint32_t adc_raw) {
   if (adc_raw == 0 || adc_raw == 4095) return 25.0f;
   float voltage = adc_raw * VREF / 4095.0f;
-  float resistance = R_PULLUP * (VREF / voltage - 1.0f);
+  float resistance = R_PULLUP * (voltage / (VREF - voltage));
   float lnR = logf(resistance / NTC_R0);
   float inv_T = (1.0f / 298.15f) + (1.0f / NTC_BETA) * lnR;
   return 1.0f / inv_T - 273.15f;
@@ -190,16 +190,18 @@ int main(void)
 
   while (1)
   {
-    if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK) {
+	  HAL_ADC_Start(&hadc1);
+	  if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK) {
       adc_value = HAL_ADC_GetValue(&hadc1);
       temperature = Calculate_Temperature(adc_value);
     }
+	  HAL_ADC_Stop(&hadc1);
 
     int temp_int = (int)temperature;
     int temp_dec = (int)((temperature - temp_int) * 10 + 0.5f);
 
     char buf[32];
-    sprintf(buf, "TEMP:%d.%dC", temp_int, temp_dec);
+    sprintf(buf, "TEMP:%2d.%1dC ", temp_int, temp_dec);
     OLED_DrawString(0, 2, buf);
 
     sprintf(buf, "ADC:%4lu", adc_value);
