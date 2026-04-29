@@ -1,0 +1,7 @@
+../Core/Src/ntc_sensor.c:7:6:NTC_Init	4	static
+../Core/Src/ntc_sensor.c:10:10:NTC_ReadADC	16	static
+../Core/Src/ntc_sensor.c:21:10:NTC_ReadAverageADC	32	static
+../Core/Src/ntc_sensor.c:37:7:NTC_CalculateTemperature	48	static
+../Core/Src/ntc_sensor.c:56:14:NTC_ValidateTemperature	16	static
+../Core/Src/ntc_sensor.c:66:7:NTC_ReadTemperature	16	static
+../Core/Src/ntc_sensor.c:71:6:NTC_UpdateTempData	16	static
