@@ -5,6 +5,8 @@
 
 ADC_HandleTypeDef hadc1;
 
+
+
 static void MX_ADC1_Init(void);
 static void MX_GPIO_Init(void);
 void SystemClock_Config(void);
