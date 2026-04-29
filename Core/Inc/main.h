@@ -31,13 +31,9 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-<<<<<<< HEAD
 #include "app_config.h"
 #include "ntc_sensor.h"
 #include "oled_display.h"
-=======
-
->>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

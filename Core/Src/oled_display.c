@@ -347,7 +347,7 @@ void OLED_UpdateDisplay(const TempData* data, const AlarmConfig* alarm) {
             case STATUS_ERROR: strcpy(status_str, "STATUS: ERR"); break;
             default: strcpy(status_str, "STATUS: ???"); break;
         }
-        OLED_DrawString(0, 6, status_str);
+        OLED_DrawString(0, 7, status_str);
         
     } else {
         OLED_Clear();

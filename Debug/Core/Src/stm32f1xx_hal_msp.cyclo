@@ -1,10 +1,5 @@
 ../Core/Src/stm32f1xx_hal_msp.c:62:6:HAL_MspInit	1
 ../Core/Src/stm32f1xx_hal_msp.c:89:6:HAL_ADC_MspInit	2
 ../Core/Src/stm32f1xx_hal_msp.c:122:6:HAL_ADC_MspDeInit	2
-<<<<<<< HEAD
 ../Core/Src/stm32f1xx_hal_msp.c:150:6:HAL_I2C_MspInit	1
-../Core/Src/stm32f1xx_hal_msp.c:187:6:HAL_I2C_MspDeInit	2
-=======
-../Core/Src/stm32f1xx_hal_msp.c:150:6:HAL_I2C_MspInit	2
-../Core/Src/stm32f1xx_hal_msp.c:185:6:HAL_I2C_MspDeInit	2
->>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
+../Core/Src/stm32f1xx_hal_msp.c:164:6:HAL_I2C_MspDeInit	2

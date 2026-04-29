@@ -60,13 +60,8 @@ all: main-build
 main-build: OLED_NTC_New.elf secondary-outputs
 
 # Tool invocations
-<<<<<<< HEAD
 OLED_NTC_New.elf OLED_NTC_New.map: $(OBJS) $(USER_OBJS) D:\stm32-oled-temp-monitor\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "OLED_NTC_New.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\stm32-oled-temp-monitor\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OLED_NTC_New.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-=======
-OLED_NTC_New.elf OLED_NTC_New.map: $(OBJS) $(USER_OBJS) G:\STM32_Projects\OLED_NTC_New\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "OLED_NTC_New.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"G:\STM32_Projects\OLED_NTC_New\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OLED_NTC_New.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
->>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
 	@echo 'Finished building target: $@'
 	@echo ' '
 

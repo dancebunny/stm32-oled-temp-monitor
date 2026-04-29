@@ -23,14 +23,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-<<<<<<< HEAD
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Core/Inc/app_config.h ../Core/Inc/ntc_sensor.h \
  ../Core/Inc/oled_display.h ../Core/Inc/app_config.h \
  ../Core/Inc/ntc_sensor.h ../Core/Inc/oled_display.h
-=======
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
->>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -57,12 +53,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
-<<<<<<< HEAD
 ../Core/Inc/app_config.h:
 ../Core/Inc/ntc_sensor.h:
 ../Core/Inc/oled_display.h:
 ../Core/Inc/app_config.h:
 ../Core/Inc/ntc_sensor.h:
 ../Core/Inc/oled_display.h:
-=======
->>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
