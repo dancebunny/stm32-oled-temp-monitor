@@ -2,4 +2,8 @@
 ../Core/Src/stm32f1xx_hal_msp.c:89:6:HAL_ADC_MspInit	40	static
 ../Core/Src/stm32f1xx_hal_msp.c:122:6:HAL_ADC_MspDeInit	16	static
 ../Core/Src/stm32f1xx_hal_msp.c:150:6:HAL_I2C_MspInit	40	static
+<<<<<<< HEAD
 ../Core/Src/stm32f1xx_hal_msp.c:187:6:HAL_I2C_MspDeInit	16	static
+=======
+../Core/Src/stm32f1xx_hal_msp.c:185:6:HAL_I2C_MspDeInit	16	static
+>>>>>>> 12bd0d659590962a20f2406d5e3e0c07e81f53bd
